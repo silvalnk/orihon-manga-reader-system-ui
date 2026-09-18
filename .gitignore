@@ -1,0 +1,6 @@
+.DS_Store
+*.love
+/cache/
+.data/
+*.log
+luac.out
