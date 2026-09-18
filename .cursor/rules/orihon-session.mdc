@@ -1,0 +1,14 @@
+---
+description: Restaura contexto Orihon em qualquer sessão nova deste repo
+alwaysApply: true
+---
+
+Antes de mudar o leitor, a API ou o layout:
+
+1. Ler `docs/GLOSSARY.md` se o usuário for iniciante ou o termo não for óbvio.
+2. Ler `memory/STATE.md`, `memory/LIBRARY.md`, `memory/LAST_SESSION.md`.
+3. Seguir `.cursor/skills/orihon-reader/SKILL.md`.
+4. Spec em `.specify/SPEC.md` é a fonte da verdade.
+5. Print da estante: `docs/images/estante.jpg` (README).
+6. Não adicionar Manga Plus nem conteúdo adulto explícito.
+7. Não recolocar `curl` síncrono em `src/app.lua`. CAP-7 / `tests/perf.lua`.
