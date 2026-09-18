@@ -5,9 +5,6 @@
 > UI de **orihon** (livro-acordeão): estante de dobras, ficha, leitura em *spread* RTL.  
 > Spec-Driven + [BMad Method](https://github.com/bmad-code-org/BMAD-METHOD).
 
-Repositório: [silvalnk/orihon-manga-reader-system-ui](https://github.com/silvalnk/orihon-manga-reader-system-ui)  
-Pasta local: `orihon_manga_ui/` · Marca: **Orihon**
-
 ![Estante do Orihon: busca, favoritos, grade de obras e barra de rolagem](docs/images/estante.jpg)
 
 | | |
