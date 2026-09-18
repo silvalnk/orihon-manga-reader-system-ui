@@ -2,7 +2,7 @@
 
 Atualizado: 2026-09-17
 
-GitHub: [silvalnk/lua-orihon-manga-reader](https://github.com/silvalnk/lua-orihon-manga-reader) · pasta local: `lua-orihon/`
+GitHub: [silvalnk/orihon-manga-reader-system-ui](https://github.com/silvalnk/orihon-manga-reader-system-ui) · pasta local: `orihon_manga_ui/`
 
 Print da estante: [`docs/images/estante.jpg`](../docs/images/estante.jpg)
 
@@ -22,10 +22,11 @@ Print da estante: [`docs/images/estante.jpg`](../docs/images/estante.jpg)
 - CAP-7: números em `layout.prefetch_ahead` / `jobs.N` / `layout.images_per_frame`; testes em `tests/perf.lua`; CI em `.github/workflows/test.yml`
 - CAP-8: chrome mínimo; `layout.shows_footer` só em `fold` e `spread`
 - ADR: `docs/adr/0003-nonblocking-ui.md`
+- Licença do código: MIT (`LICENSE`); obras da MangaDex continuam dos autores
 
 ## Como retomar numa sessão nova do Cursor
 
-1. Abrir a pasta `lua-orihon/` (não um chat órfão).
+1. Abrir a pasta `orihon_manga_ui/` (não um chat órfão).
 2. Ler `docs/GLOSSARY.md` se algum termo não for óbvio.
 3. Ler `memory/STATE.md`, `memory/LIBRARY.md`, `memory/LAST_SESSION.md`.
 4. Rodar `lua tests/run.lua`.

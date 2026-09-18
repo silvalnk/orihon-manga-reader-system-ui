@@ -5,6 +5,9 @@
 > UI de **orihon** (livro-acordeão): estante de dobras, ficha, leitura em *spread* RTL.  
 > Spec-Driven + [BMad Method](https://github.com/bmad-code-org/BMAD-METHOD).
 
+Repositório: [silvalnk/orihon-manga-reader-system-ui](https://github.com/silvalnk/orihon-manga-reader-system-ui)  
+Pasta local: `orihon_manga_ui/` · Marca: **Orihon**
+
 ![Estante do Orihon: busca, favoritos, grade de obras e barra de rolagem](docs/images/estante.jpg)
 
 | | |
@@ -27,6 +30,7 @@
 | [`docs/bmad/PROCESS.md`](docs/bmad/PROCESS.md) | Loop Clarify → Plan → Build → Learn |
 | [`docs/adr/`](docs/adr/) | Porquês |
 | [`docs/images/estante.jpg`](docs/images/estante.jpg) | Print da estante |
+| [`LICENSE`](LICENSE) | MIT (código) |
 
 Se código e spec divergirem, a **spec manda**.
 
@@ -44,7 +48,7 @@ sudo apt install love lua5.4 curl
 ## Como rodar
 
 ```bash
-cd lua-orihon
+cd orihon_manga_ui
 lua5.4 tests/run.lua    # ou: lua tests/run.lua  (inclui contratos de performance CAP-7)
 lua5.4 tests/live.lua   # smoke na API MangaDex (rede)
 love .
@@ -67,8 +71,9 @@ Não há botões no rodapé da home. Rodapé só onde falta navegação: **Back*
 ## Arquitetura
 
 ```
-lua-orihon/
+orihon_manga_ui/
   AGENTS.md
+  LICENSE
   .specify/
   memory/
   docs/images/estante.jpg
@@ -79,6 +84,8 @@ lua-orihon/
 
 HTTP usa `curl` **fora** da janela (3 workers em `src/jobs.lua`). Imagens vão para o save dir do LÖVE (`~/.local/share/love/orihon/` no Linux). `tests/perf.lua` falha se o `curl` voltar para `src/app.lua`.
 
-## Licença de conteúdo
+## Licença
+
+MIT para o **código** do Orihon. Ver [`LICENSE`](LICENSE).
 
 As obras pertencem aos autores/editoras listados na MangaDex. O Orihon só consome a API pública. Não redistribua páginas em cache.
